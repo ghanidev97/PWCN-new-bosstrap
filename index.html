@@ -6,13 +6,13 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Perfect World Classic Nostalgia</title>
-  <link rel="icon" href="assets/img/logo.png" type="image/x-icon">
+  <link rel="icon" href="assets/img/logo_pwcni.png" type="image/x-icon">
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link rel="icon" href="assets/img/logo.png" type="image/x-icon">
+  <link rel="icon" href="assets/img/logo_pwcni.png" type="image/x-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,6 +57,48 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  <style>
+    #neubar {
+      background: #1e181399;
+      z-index: 9999;
+      box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.4);
+      width: 100%;
+    }
+
+    .nav-item .active {
+      border-radius: 6px;
+      background: linear-gradient(145deg, #ffe7ca, #f5d7b2);
+      box-shadow: 4px 4px 8px #ddc1a0,
+        -4px -4px 8px #f7e5cc;
+    }
+
+    #neubar .dropdown-menu a:hover {
+      color: #545454;
+    }
+
+    #neubar .nav-item {
+
+      /* color: wheat; */
+      margin: auto 4px;
+    }
+
+    #neubar a {
+      font-size: 15px;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+
+    #neubar .dropdown-menu {
+      background: #1e181399;
+      color: #545454;
+
+    }
+
+    a.navbar-brand {
+      color: #545454;
+    }
+  </style>
 </head>
 
 <body>
@@ -64,7 +106,41 @@
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center">
 
-    <div class="container-fluid d-flex align-items-left ">
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top" id="neubar">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="assets/img/logo_pwcni.png" height="75" width="75" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link mx-2 active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user mx-1"></i>
+                Account
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#" style=" color: #ddc1a0;">Register</a></li>
+                <li><a class="dropdown-item" href="#" style=" color: #ddc1a0;">Login</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- <div class="container-fluid d-flex align-items-left ">
 
       <a href="index.html" class=" align-items-center">
 
@@ -86,7 +162,7 @@
         </ul>
       </nav>
 
-    </div>
+    </div> -->
   </header>
   <!-- End Header -->
 
@@ -106,7 +182,7 @@
 
     </div>
 
-    <div class="info d-flex align-items-center">
+    <div class="info d-flex align-items-center" style="z-index: 995;">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-5 text-center">
@@ -131,7 +207,8 @@
       <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-4.jpg)"></div>
       <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-5.jpg)"></div>
 
-      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev"
+        style="z-index: 99999999999;">
         <img src="assets/img/hero-carousel/arrow_prev_black.png" alt="">
         <!-- <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span> -->
       </a>
@@ -510,8 +587,24 @@
                   segera. Semua akun akan diblokir secara permanen berdasarkan perangkat keras dan alamat IP.
                 </p>
               </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-3.jpg" alt="" class="img-fluid">
+              <div class="col-lg-5 order-1 order-lg-2 text-center" data-aos="fade" style="margin-left: 50px;">
+                <!-- <div class="col-lg-5" data-aos="fade"> -->
+                <div>
+                  <div class="main-hero__image">
+                    <div class="main-hero__image-item active" data-hero-id="mage">
+                      <div class="main-hero__image-item-circle flex-cc" style="margin-bottom: 40px;">
+                        <img src="assets/img/character/circle_bg.png" alt="">
+                      </div>
+                      <div class="main-hero__image-item-effect flex-cc" style="margin-bottom: 40px;">
+                        <img src="assets/img/character/effect_bg.png" alt="">
+                      </div>
+                      <div class="main-hero__image-item-img">
+                        <img src="assets/img/character/archer_img.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- </div> -->
               </div>
             </div>
           </div><!-- End tab content item -->
@@ -533,7 +626,21 @@
                   kebijaksanaan kami.</p>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-4.jpg" alt="" class="img-fluid">
+                <div>
+                  <div class="main-hero__image">
+                    <div class="main-hero__image-item active" data-hero-id="mage">
+                      <div class="main-hero__image-item-circle flex-cc" style="margin-bottom: 40px;">
+                        <img src="assets/img/character/circle_bg.png" alt="">
+                      </div>
+                      <div class="main-hero__image-item-effect flex-cc" style="margin-bottom: 40px;">
+                        <img src="assets/img/character/effect_bg.png" alt="">
+                      </div>
+                      <div class="main-hero__image-item-img">
+                        <img src="assets/img/character/fx_img.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div><!-- End tab content item -->
