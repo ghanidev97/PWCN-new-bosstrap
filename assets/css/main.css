@@ -2887,7 +2887,7 @@ section {
   height: 237px;
   bottom: 0;
   background: linear-gradient(180deg, rgba(255, 242, 224, 0) 0%, #FFF2E0 100%);
-  z-index: 10000000;
+  z-index: 993;
 }
 
 .background::before {
@@ -3688,4 +3688,313 @@ section {
 
 .footer_other .media .media_play:hover {
   filter: brightness(110%);
+}
+
+#neubar {
+  background: #1e181399;
+  z-index: 9999;
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+
+.nav-item .active {
+  border-radius: 6px;
+  background: linear-gradient(145deg, #ffe7ca, #f5d7b2);
+  box-shadow: 4px 4px 8px #ddc1a0,
+    -4px -4px 8px #f7e5cc;
+}
+
+#neubar .dropdown-menu a:hover {
+  color: #545454;
+}
+
+#neubar .nav-item {
+
+  /* color: wheat; */
+  margin: auto 4px;
+}
+
+#neubar a {
+  font-size: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+#neubar .dropdown-menu {
+  background: #1e181399;
+  color: #545454;
+
+}
+
+a.navbar-brand {
+  color: #545454;
+}
+
+.anim {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+@media (max-width: 1024px) {
+  .anim {
+    display: none;
+  }
+}
+
+.anim__smoke {
+  position: absolute;
+}
+
+.anim__smoke.smoke_1 {
+  background: url("../img/animatio/smoke_1.png");
+  background-position: 0px 50%;
+  width: 100%;
+  height: 671px;
+  top: -300px;
+  animation: smoke-1 14s linear infinite;
+  opacity: 1;
+}
+
+@keyframes smoke-1 {
+  from {
+    background-position: 0px 50%;
+  }
+
+  to {
+    background-position: 1166px 50%;
+  }
+}
+
+.anim__smoke.smoke_2 {
+  background: url("../img/animatio/smoke_2.png");
+  background-position: 0px 50%;
+  width: 100%;
+  height: 558px;
+  left: 0px;
+  top: -300px;
+  animation: smoke-2 10s linear infinite;
+  opacity: 1;
+}
+
+@keyframes smoke-2 {
+  from {
+    background-position: 0px 50%;
+  }
+
+  to {
+    background-position: 914px 50%;
+  }
+}
+
+.anim__smoke.smoke_3 {
+  background: url("../img/animatio/smoke_1.png");
+  background-position: 0px 50%;
+  width: 100%;
+  height: 671px;
+  bottom: -100px;
+  animation: smoke-3 18s linear infinite;
+  opacity: 1;
+  z-index: 1;
+}
+
+@keyframes smoke-3 {
+  from {
+    background-position: 0px 50%;
+  }
+
+  to {
+    background-position: 1166px 50%;
+  }
+}
+
+.anim__smoke.smoke_4 {
+  background: url("../img/animatio/smoke_2.png");
+  background-position: 0px 50%;
+  width: 100%;
+  height: 558px;
+  left: 0px;
+  bottom: -200px;
+  animation: smoke-4 14s linear infinite;
+  opacity: 1;
+  z-index: 1;
+}
+
+@keyframes smoke-4 {
+  from {
+    background-position: 0px 50%;
+  }
+
+  to {
+    background-position: 914px 50%;
+  }
+}
+
+.anim__sparks.right {
+  top: 400px;
+  right: -100px;
+  transform: rotate(135deg) scale(-1.8, -1.8);
+}
+
+.anim__sparks.left {
+  top: 400px;
+  left: -100px;
+  transform: rotate(-135deg) scale(1.8, -1.8);
+}
+
+.anim__sparks {
+  position: absolute;
+  z-index: 6;
+}
+
+.anim__sparks div {
+  position: absolute;
+}
+
+.anim__sparks-spark-1 {
+  background: url("../img/animatio/spark_1.png") no-repeat;
+  width: 764px;
+  height: 313px;
+  right: 0;
+  bottom: -120px;
+  transform: scale(0.6);
+  animation: spark-1 4s linear infinite;
+}
+
+@keyframes spark-1 {
+  0% {
+    bottom: -320px;
+    transform: scale(0.6);
+    opacity: 1;
+  }
+
+  25% {
+    bottom: -240px;
+    transform: scale(0.7);
+    opacity: 1;
+  }
+
+  50% {
+    bottom: -160px;
+    transform: scale(0.8);
+    opacity: 1;
+  }
+
+  75% {
+    bottom: -80px;
+    transform: scale(0.9);
+    opacity: 0.5;
+  }
+
+  to {
+    bottom: 0;
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.anim__sparks-spark-2 {
+  background: url("../img/animatio/spark_2.png") no-repeat;
+  width: 149px;
+  height: 335px;
+  right: 230px;
+  bottom: -320px;
+  transform: scale(0.6);
+  animation: spark-1 4s linear infinite;
+  animation-delay: 2s;
+}
+
+.anim__sparks-spark-3 {
+  background: url("../img/animatio/spark_3.png") no-repeat;
+  width: 128px;
+  height: 165px;
+  right: 280px;
+  bottom: -140px;
+  transform: scale(0.6);
+  animation: spark-3 4s linear infinite;
+  animation-delay: 2s;
+}
+
+@keyframes spark-3 {
+  0% {
+    bottom: -140px;
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 1;
+  }
+
+  25% {
+    bottom: -80px;
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+    opacity: 1;
+  }
+
+  50% {
+    bottom: -20px;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 1;
+  }
+
+  75% {
+    bottom: 40px;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0.5;
+  }
+
+  to {
+    bottom: 100px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.anim__sparks-spark-4 {
+  background: url("../img/animatio/spark_4.png") no-repeat;
+  width: 794px;
+  height: 176px;
+  right: 0;
+  bottom: -180px;
+  transform: scale(0.6);
+  animation: spark-4 4s linear infinite;
+}
+
+@keyframes spark-4 {
+  0% {
+    bottom: -180px;
+    transform: scale(0.6);
+    opacity: 1;
+  }
+
+  25% {
+    bottom: -120px;
+    transform: scale(0.7);
+    opacity: 1;
+  }
+
+  50% {
+    bottom: -60px;
+    transform: scale(0.8);
+    opacity: 1;
+  }
+
+  75% {
+    bottom: 0;
+    transform: scale(0.9);
+    opacity: 0.5;
+  }
+
+  to {
+    bottom: 60px;
+    transform: scale(1);
+    opacity: 0;
+  }
 }
