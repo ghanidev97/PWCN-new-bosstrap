@@ -452,14 +452,14 @@ section {
 --------------------------------------------------------------*/
 @media (max-width: 1279px) {
   .navbar {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     right: -100%;
     width: 100%;
-    max-width: 400px;
-    bottom: 0;
+    /* max-width: 250px; */
+    /* bottom: 200px; */
     transition: 0.3s;
-    z-index: 9997;
+    z-index: 9999999;
   }
 
   .navbar ul {
@@ -3714,7 +3714,7 @@ section {
 }
 
 .anim__smoke.smoke_1 {
-  background: url("../img/animatio/smoke_1.png");
+  background: url("../img/smoke_1.png");
   background-position: 0px 50%;
   width: 100%;
   height: 671px;
@@ -3734,7 +3734,7 @@ section {
 }
 
 .anim__smoke.smoke_2 {
-  background: url("../img/animatio/smoke_2.png");
+  background: url("../img/smoke_2.png");
   background-position: 0px 50%;
   width: 100%;
   height: 558px;
@@ -3755,7 +3755,7 @@ section {
 }
 
 .anim__smoke.smoke_3 {
-  background: url("../img/animatio/smoke_1.png");
+  background: url("../img/smoke_1.png");
   background-position: 0px 50%;
   width: 100%;
   height: 671px;
@@ -3776,7 +3776,7 @@ section {
 }
 
 .anim__smoke.smoke_4 {
-  background: url("../img/animatio/smoke_2.png");
+  background: url("../img/smoke_2.png");
   background-position: 0px 50%;
   width: 100%;
   height: 558px;
@@ -3819,7 +3819,7 @@ section {
 }
 
 .anim__sparks-spark-1 {
-  background: url("../img/animatio/spark_1.png") no-repeat;
+  background: url("../img/spark_1.png") no-repeat;
   width: 764px;
   height: 313px;
   right: 0;
@@ -3861,7 +3861,7 @@ section {
 }
 
 .anim__sparks-spark-2 {
-  background: url("../img/animatio/spark_2.png") no-repeat;
+  background: url("../img/spark_2.png") no-repeat;
   width: 149px;
   height: 335px;
   right: 230px;
@@ -3872,7 +3872,7 @@ section {
 }
 
 .anim__sparks-spark-3 {
-  background: url("../img/animatio/spark_3.png") no-repeat;
+  background: url("../img/spark_3.png") no-repeat;
   width: 128px;
   height: 165px;
   right: 280px;
@@ -3920,7 +3920,7 @@ section {
 }
 
 .anim__sparks-spark-4 {
-  background: url("../img/animatio/spark_4.png") no-repeat;
+  background: url("../img/spark_4.png") no-repeat;
   width: 794px;
   height: 176px;
   right: 0;
