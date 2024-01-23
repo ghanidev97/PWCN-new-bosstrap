@@ -96,7 +96,7 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header align-items-center">
+  <!-- <header id="header" class="header align-items-center">
 
     <nav class="navbar navbar-expand-lg fixed-top" id="neubar" style="z-index: 99999999;">
       <div class="container">
@@ -152,6 +152,44 @@
       </div>
     </nav>
 
+  </header> -->
+
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a class="navbar-brand" href="#"><img src="assets/img/logo_pwcni.png" height="90" width="90" /></a>
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <!-- <h1>UpConstruction<span>.</span></h1> -->
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#guide">Guide</a></li>
+          <li><a href="#rules">Rules</a></li>
+          <li><a href="event.html">Event</a></li>
+          <li><a href="download.html">Download</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user mx-1"></i>
+              Account
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="https://panel.shergn.com/register"
+                  style=" color: #ddc1a0;">Register</a></li>
+              <li><a class="dropdown-item" href="https://panel.shergn.com/login" style=" color: #ddc1a0;">Login</a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
   </header>
   <!-- End Header -->
 
@@ -171,7 +209,7 @@
 
     </div>
 
-    <div class="info d-flex align-items-center" style="z-index: 995;">
+    <div class="info d-flex align-items-center">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-5 text-center">
@@ -197,19 +235,19 @@
       <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-5.jpg)"></div>
 
       <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-        <img src="assets/img/hero-carousel/arrow_prev_black.png" alt="">
+        <img src="assets/img/hero-carousel/arrow_prev_black.png" alt="" style="z-index: 998;">
         <!-- <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span> -->
       </a>
 
       <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
         <!-- <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span> -->
-        <img src="assets/img/hero-carousel/arrow_next_black.png" alt="">
+        <img src="assets/img/hero-carousel/arrow_next_black.png" alt="" style="z-index: 998;">
       </a>
 
     </div>
 
   </section><!-- End Hero Section -->
-  <div class="gradient"></div>
+  <!-- <div class="gradient"></div> -->
   <main id="main">
     <!-- ======= Get Started Section ======= -->
 
@@ -322,7 +360,7 @@
       </div>
     </section><!-- End Get Started Section -->
 
-    <section id="update" class="recent-blog-posts section-bg has-border-top">
+    <section id="events" class="recent-blog-posts section-bg has-border-top">
       <div class="container" data-aos="fade-up">
 
 
